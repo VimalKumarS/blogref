@@ -40,7 +40,7 @@ At the heart of SWE-agent is the recognition that language models need specially
 
 **Figure 1: SWE-agent Architecture**
 
-![SWE-agent Architecture](./sweagent_architecture.png)
+![SWE-agent Architecture](./diagrams/sweagent_architecture.png)
 
 The diagram above illustrates the complete SWE-agent architecture. GitHub issues arrive as input along with repository data. The agent core processes information through language models and reasoning engines, maintaining context throughout. The Agent-Computer Interface provides specialized tools for navigation, viewing, editing, and execution. The repository interface manages Git operations and tracks state. The execution environment safely runs commands and tests. Configuration settings govern the entire system. The output layer produces solutions and reports.
 
@@ -92,7 +92,7 @@ The agent receives the issue description and begins by analyzing it. What is the
 
 **Figure 2: SWE-agent Problem-Solving Flow**
 
-![SWE-agent Agent Flow](./sweagent_agent_flow.png)
+![SWE-agent Agent Flow](./diagrams/sweagent_agent_flow.png)
 
 The diagram above shows the complete problem-solving flow. The agent receives an issue and analyzes it to understand the problem. It explores the repository to understand structure and locate relevant files. It examines code to understand implementation details. It searches for patterns to find related components. Based on this understanding, it formulates hypotheses about what needs to be fixed. It implements changes using the edit tool. It runs tests to verify the solution. If tests fail, it analyzes the failure and iterates. Once tests pass, it validates the solution and generates a report.
 
@@ -136,7 +136,7 @@ Importantly, these tools provide output in formats that are easy for language mo
 
 **Figure 3: SWE-agent Tool System and Optimization**
 
-![SWE-agent Tool System](./sweagent_tool_system.png)
+![SWE-agent Tool System](./diagrams/sweagent_tool_system.png)
 
 The diagram above illustrates the tool system and how it's optimized for agent usage. Tools are organized into categories: navigation, viewing, editing, and execution. Each tool provides structured output, maintains context, provides immediate feedback, and executes safely. Tools follow specific usage patterns: exploration for understanding structure, search for locating code, examination for understanding logic, modification for updating code, and validation for verifying solutions. The tool system is optimized for language models through clear output formats, iteration-friendly design, context preservation, and reasoning-friendly semantics. The agent decision process considers current state, goals, and context memory to select appropriate tools.
 
